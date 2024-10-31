@@ -1,0 +1,80 @@
+/* Compatibilité avec bootstrap */
+input[type='text']{
+    height:34px !important;
+    color: #333;
+}
+
+/* Results */
+#stage_search_results{
+    width:calc(100% - 30px);
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid rgb(102,175,233);
+    background-color: rgba(255,255,255, 1);
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 0;
+    border:0px;
+    font-size:12px;
+}
+#stage_search_results li{
+    border-bottom: 1px solid #ddd;
+}
+#stage_search_results li:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+#stage_search_results li:last-child{
+    border-bottom: 0;
+}
+#stage_search_results li a{
+    font-size: 13px;
+    font-family:'Open Sans', arial;
+    color:#555;
+    padding:5px 10px !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#stage_search_results li a:hover{
+    background-color: #ddd;
+}
+#stage_search_results li a span{
+    font-family:'Open Sans', arial;
+    color:#555;
+}
+
+.stage_result_dates{
+    background-color:#666;
+    color:#fff !important;
+    padding:2px 5px;
+    display:inline-block;
+    width:80px;
+    border-radius: 1px;
+    margin-right: 8px;
+}
+.stage_result_place{
+    display: inline-block;
+    float:right;
+}
+.stage_result_category{
+    background-color:#666;
+    color:#fff !important;
+    padding:2px 5px;
+    display:inline-block;
+    border-radius: 1px;
+    margin-right: 8px;
+}
+.stage_result_description{
+    display:block;
+    padding:2px 5px 2px 87px;
+}
+
+@media screen and (max-width: 768px) {
+  
+    #stage_search_address_input_bloc{margin-top:20px;}
+    
+}
+

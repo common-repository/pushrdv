@@ -1,0 +1,237 @@
+/* ------------- Frontend CSS ------------- */
+/* LEFT COLUMN - Dates */
+.stage-list{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+.stage{
+    height: 90px !important;
+    margin-bottom: 10px !important;
+}
+.stage-date{
+    height:100%;
+    padding: 5px 15px 5px 15px;
+    background-color: #3467B1;
+    text-align: center;
+}
+.stage-date div{
+    color: #fff;
+}
+.stage-day {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 40px;
+}
+.stage-month {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.stage-year {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+/* MIDDLE COLUMN - Content */
+.stage-content{
+    height:100%;
+    padding: 10px 5px 5px 15px;
+    text-align: center;
+    background-color: #fff;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    text-decoration:none !important;
+}
+.stage-content div, .stage-content span{
+    color: #3467B1;
+}
+.stage-content:hover{
+    background-color:#3467B1;
+    text-decoration: none !important;
+}
+.stage-content:hover div, .stage-content:hover span{
+    color: #fff;
+}
+.stage-title{
+    margin-top: 10px;
+    font-size:16px;
+    line-height: 18px;
+    font-weight:600;
+}
+.stage-dates{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+
+/* RIGHT COLUMN - Price */
+.stage-prices{
+    height:100%;
+    padding: 5px 5px 5px 5px;
+    background-color: #3467B1;
+    text-align: center;
+}
+.stage-prices div, .stage-prices span{
+    color: #fff;
+}
+.stage-price {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.stage-btn{
+    font-size: 16px;
+    background-color: #fff;
+    color: #3467B1;
+    padding: 1px 5px 1px 5px;
+    margin-top: 5px;
+}
+.stage-btn:hover{
+    background-color: #234472;
+    color: #fff;
+}
+
+
+/* ------------- Single Stage ----------------- */
+#content{width: 100% !important;}
+.single-stage, .single-stage-next{width:100%;background-color: #fff;padding:20px;font-size:15px}
+.single-stage p{font-size:15px}
+.single-stage-meta, .single-stage .hideItem{display: none}
+.single-stage .floatLeftChild > div{float:left}
+.single-stage-head{width:100%;padding:0;min-height:300px;}
+.single-stage-head > div {height:300px;margin:0}
+.single-stage-map, .single-stage-buy{background-color:#eee;}
+#single-stage-map-gmap{width: 100%; height: 100%;}
+.single-stage-buy{text-align: center}
+
+.single-stage-recap .single-stage-calendar, .single-stage-recap .single-stage-place{display: block;margin-top:10px;clear: both;width:100%}
+.single-stage-recap .single-stage-phone, .single-stage-recap .single-stage-email, .single-stage-recap .single-stage-category{margin-top:10px;line-height: 30px}
+.single-stage-recap img{width:30px;display: inline-block;margin-right: 8px; line-height: 30px;}
+
+
+.single-stage-price{margin-top:40px;color:#333;font-size:40px;display: inline-block;width:100%;text-align: center}
+.single-stage-accompte{color:#333;font-size:18px;display: inline-block;width:100%;text-align: center}
+.single-stage-disponibility{margin:10px 0;color:#333;font-size:18px;display: inline-block;width:100%;text-align: center}
+.single-stage-btn-register{width:85%;margin:15px auto;padding:8px 10px; text-align: center;display: block;}
+.single-stage-btn-register:hover{text-decoration: none;filter: saturate(180%);-webkit-filter: saturate(180%);-moz-filter: saturate(180%);-o-filter: saturate(180%);-ms-filter: saturate(180%);border-radius: 10px;}
+
+.single-stage-full{font-size:15px;display:inline-block;width:85%;margin:15px auto;padding:8px 10px;background-color: #EF5350;color:#fff;text-align: center;}
+.single-stage-full a{border:1px solid #fff;-webkit-transition: all .2s ease-in; -moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;transition: all .2s ease-in;background-color: #fff;border-radius: 3px;color:#333;display: inline-block;margin:15px auto;padding:3px 5px}
+.single-stage-full a:hover{text-decoration: none;border:1px solid #888;border-radius: 5px;background-color: #f5f5f5}
+
+.single-stage-program{width:100%;padding:10px;}
+.single-stage-description{width:100%;padding:10px;}
+.single-stage-program h2, .single-stage-description h2{margin-top: 20px;}
+
+.single-stage-meeting{width:100%;border:1px solid #ddd;background-color: #f5f5f5;padding:10px;margin-bottom: 15px}
+.single-stage-meeting img{width:30px;display: inline-block;margin-right: 8px}
+
+@media only screen and (min-width: 767px) {
+    .single-stage-head > div{float:left}
+    .single-stage-map{width:30%;}
+    .single-stage-recap{width:40%;padding:0 10px 10px 15px;}
+    .single-stage-buy{width:30%}
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* ------------- Agencies Map & Agencies markers ------------- */
+#agencies-maps{width:100%;height:600px;background-color: #ccc;}
+.agencies-map-marker h4{
+    text-align: center !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #3467B1;
+    margin-bottom: 5px !important;
+    margin-top:5px !important;
+}
+.agencies-map-marker ul{
+    list-style: none !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+.agencies-map-marker li{
+    line-height: 21px !important;
+    font-size: 13px !important;
+}
+.agencies-map-marker a{
+    text-decoration: none !important;
+}
+.marker-stage{text-align: center; border: solid 1px #3467B1; background-color: #fff; color: #3467B1; margin-bottom: 5px;}
+.marker-stage-content{
+    display:inline-block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none !important;
+    color: #3467B1;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.marker-stage-content:hover{text-decoration: none; background-color: #3467B1; color: #fff;}
+.marker-stage-title{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+/* ------------- Responsive ------------- */
+@media only screen and (max-width: 959px) {
+    .stage-title{
+        margin-top: 5px;
+        font-size:14px;
+        line-height: 16px;
+    }
+    .stage-day{
+        font-size:14px;line-height: 18px;
+    }
+    .stage-month{
+        font-size:10px;line-height: 14px;
+    }
+    .stage-year{
+        font-size:12px;line-height: 16px;
+    }
+    .stage-price{
+        font-size:14px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #agencies-maps{
+        display:none;
+    }
+    .btn.stage-btn{
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .stage-btn.complet{
+        display: block;
+    }
+    .stage-title{
+        margin-top: 0;
+        font-size:13px;
+    }
+    .stage-dates{
+        font-size: 10px;
+    }
+}
+
+/** COMPATIBILITE AVEC LES THEMES WORDPRESS **/
+.fa.glyphicon.fa{font:normal normal normal 14px/1 FontAwesome !important;}
